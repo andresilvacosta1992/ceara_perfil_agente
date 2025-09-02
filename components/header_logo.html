@@ -1,0 +1,929 @@
+<!-- CEARÁ PERFIL - INFRAESTRUTURA ELÉTRICA: Empresa especializada em infraestrutura elétrica industrial e residencial. Endereço: R. Madeira, 39 - Rudge Ramos - São Bernardo do Campo/SP. Contatos: (11) 94540-3008 (principal), (11) 4317-5999 (secundário), contato@cearaperfil.com.br, vendas@cearaperfil.com.br, WhatsApp +55 11 94540-3008. Redes sociais: @cearaperfil (Instagram/Facebook). Horário: Segunda a Sexta 8h00 às 17h30. Produtos: Perfilados metálicos, eletrocalhas, leitos para cabos, acessórios de fixação, abraçadeiras, eletrodutos, dutos de piso, rodapés metálicos, quadros de comandos, caixas para telefonia, abrigos para equipamentos de incêndio. Serviços especiais: Corte e dobra sob medida, projetos personalizados, consultoria técnica. Público-alvo: Construtoras, eletricistas profissionais, engenheiros elétricos, indústrias, setor residencial. Área de atuação: São Paulo Capital, Grande São Paulo, Interior paulista. Entrega disponível para toda Grande São Paulo. Valores: Qualidade nos produtos, agilidade no atendimento, confiança nas relações, preço justo, excelência técnica. Slogan: "O preço que você procura, na qualidade que você merece". Diferenciais: Tradição no mercado, atendimento personalizado, produtos nacionais de qualidade. Identidade visual: Cores primárias azul #1E3A8A (principal), #3B82F6 (médio), #FFFFFF (branco). Cores de apoio: #DBEAFE (azul claro), #6B7280 (cinza), #374151 (cinza escuro), #1F2937 (preto). Tipografia: Arial, Helvetica, sans-serif (limpa e industrial). Estilo: Profissional, industrial, confiável, moderno, limpo. Comunicação: Tom profissional e técnico mas acessível e confiável. Usar terminologia técnica correta do setor elétrico. CTAs padrão: "Solicitar Orçamento", "Entre em Contato", "Saiba Mais". Sempre incluir meio de contato visível. Destacar experiência, qualidade e confiabilidade. Focar benefícios práticos para o cliente. Transmitir confiança e tradição no mercado. Informações claras e objetivas, evitar linguagem rebuscada. Referenciar normas técnicas brasileiras (ABNT, INMETRO). Enfatizar segurança em instalações elétricas. Destacar qualidade e certificação dos produtos. Apresentar especificações técnicas claras e precisas. Incluir orientações básicas de instalação quando apropriado. Mencionar aspectos de sustentabilidade e eficiência energética quando relevante.REGRAS FRAMEWORK E COMPONENTES: Criar componente HTML independente, não página completa. NÃO incluir DOCTYPE, html, head, body ou estrutura completa de página. NÃO incluir CDNs externos (Bootstrap, jQuery, etc). NÃO adicionar tags script ou link para recursos externos. Usar Bootstrap 5 assumindo que já está carregado na página principal. Bootstrap Icons já disponíveis com estrutura <i class="bi bi-[nome-do-icone]"></i> e TODOS os estilos devem ser aplicados via CSS inline usando atributo style incluindo cor (color: #hex), tamanho (font-size: 1.5rem), animações, filtros, espaçamentos (margin, padding), sombras (filter: drop-shadow), transições (transition: all 0.3s ease) e outros efeitos visuais necessários. JavaScript inline permitido se necessário para funcionalidades do componente. Eventos inline (onclick, onmouseover, etc) permitidos e recomendados. Elemento principal deve ter ID único baseado no nome da pasta do componente. Adicionar classe "screenshot-component" no elemento principal se componente for visualmente completo e autônomo. Usar tags HTML5 semânticas (section, article, nav, header, footer, aside). Sistema de grid Bootstrap obrigatório (container, row, col). Classes de spacing Bootstrap (m-, p-, g-). Border radius padrão: rounded (0.375rem) ou rounded-lg (0.5rem). Sombras sutis: shadow-sm ou shadow para elementos em destaque. Transições hover suaves com transition-all duration-300. Botões primários: btn-primary (azul) para ações principais. Botões secundários: btn-outline-primary ou btn-light. Cards com border-0 shadow-sm para visual limpo. Navbar com bg-primary ou bg-white shadow-sm. Footer com bg-dark text-light ou bg-light border-top. Form controls com border-primary em focus. Usar classes alert Bootstrap para mensagens de feedback. Classes CSS descritivas, seguir padrão BEM quando apropriado. Estabelecer hierarquia visual clara (h1, h2, h3). Garantir responsividade obrigatória para dispositivos móveis e desktop. Desenvolver mobile first. Elementos tocáveis com tamanho mínimo 44px. Incluir atributos ARIA quando necessário. Alt text obrigatório em todas as imagens. Suporte completo para navegação via teclado. Estados de focus visualmente claros e acessíveis. Navegação intuitiva e previsível. Priorizar JavaScript vanilla, evitar dependências desnecessárias. Feedback visual para todas as interações do usuário. Validação de formulários em tempo real quando possível. Tratar erros graciosamente com mensagens amigáveis ao usuário. Estados de loading quando necessário. Imagens otimizadas com alt text sempre presente. Lazy loading para imagens fora da viewport inicial. Evitar recursos desnecessários. Otimizar para Core Web Vitals (LCP, FID, CLS). Sanitização adequada de inputs do usuário. Validação no servidor além da validação client-side. HTTPS obrigatório em produção. Código limpo, legível e bem estruturado. Separação clara de responsabilidades (HTML, CSS, JS). Componentes reutilizáveis quando possível. Documentação clara do propósito de cada componente. Código bem comentado quando necessário. -->
+<div id="ceara-header-completo" class="screenshot-component">
+    <header class="bg-white shadow-sm ceara-perfil-header">
+        <div class="container px-lg-4">
+            <!-- Desktop Header -->
+            <div class="d-none d-lg-flex align-items-center justify-content-between py-3">
+                <a class="d-flex align-items-center text-decoration-none" href="index.html">
+                    <img src="assets/imgs/logo/logo.png" 
+                         alt="Ceará Perfil - Infraestrutura Elétrica" 
+                         height="130" 
+                         class="logo-img"
+                         style="transition: transform 0.3s ease;"
+                         onmouseover="this.style.transform='scale(1.05)'"
+                         onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <div>
+                    <ul class="navbar-nav d-flex flex-row gap-3 ceara-main-menu">
+                        <li class="nav-item menu-principal">
+                            <a class="nav-link ceara-nav-link" href="index.html" data-page="home" data-menu-item="home">
+                                <i class="bi bi-house-door" 
+                                   style="margin-right: 6px; font-size: 0.9rem; color: #315768; transition: all 0.3s ease;"
+                                   onmouseover="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onmouseout="this.style.color='#315768'; this.style.transform='scale(1)'"
+                                   onfocus="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onblur="this.style.color='#315768'; this.style.transform='scale(1)'"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item menu-principal">
+                            <a class="nav-link ceara-nav-link" href="sobre-nos.html" data-page="sobre-nos" data-menu-item="sobre-nos">
+                                <i class="bi bi-people" 
+                                   style="margin-right: 6px; font-size: 0.9rem; color: #315768; transition: all 0.3s ease;"
+                                   onmouseover="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onmouseout="this.style.color='#315768'; this.style.transform='scale(1)'"
+                                   onfocus="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onblur="this.style.color='#315768'; this.style.transform='scale(1)'"></i>
+                                Sobre Nós
+                            </a>
+                        </li>
+                        <li class="nav-item menu-principal">
+                            <a class="nav-link ceara-nav-link" href="/assets/downloads/catalogo-ceara-perfil-2024.pdf" target="_blank" data-page="catalogo" data-menu-item="catalogo">
+                                <i class="bi bi-grid-3x3-gap" 
+                                   style="margin-right: 6px; font-size: 0.9rem; color: #315768; transition: all 0.3s ease;"
+                                   onmouseover="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onmouseout="this.style.color='#315768'; this.style.transform='scale(1)'"
+                                   onfocus="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onblur="this.style.color='#315768'; this.style.transform='scale(1)'"></i>
+                                Catálogo
+                            </a>
+                        </li>
+                        <li class="nav-item menu-principal">
+                            <a class="nav-link ceara-nav-link" href="#contatos" data-page="contatos" data-menu-item="contatos">
+                                <i class="bi bi-telephone" 
+                                   style="margin-right: 6px; font-size: 0.9rem; color: #315768; transition: all 0.3s ease;"
+                                   onmouseover="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onmouseout="this.style.color='#315768'; this.style.transform='scale(1)'"
+                                   onfocus="this.style.color='#4a90e2'; this.style.transform='scale(1.1)'"
+                                   onblur="this.style.color='#315768'; this.style.transform='scale(1)'"></i>
+                                Contatos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5511945403008&text=Olá, Gostaria de Solicitar um Orçamento..." 
+                       class="btn btn-success d-flex align-items-center gap-2 fw-bold px-4 py-3 whatsapp-btn"
+                       target="_blank" rel="noopener">
+                        <i class="bi bi-whatsapp" 
+                           style="font-size: 1.3rem; color: white; transition: all 0.3s ease;"
+                           onmouseover="this.style.color='white'; this.style.transform='scale(1.1) rotate(5deg)'"
+                           onmouseout="this.style.color='white'; this.style.transform='scale(1) rotate(0deg)'"
+                           onfocus="this.style.color='white'; this.style.transform='scale(1.1) rotate(5deg)'"
+                           onblur="this.style.color='white'; this.style.transform='scale(1) rotate(0deg)'"></i>
+                        <span class="d-none d-xl-inline">SOLICITAR ORÇAMENTO</span>
+                        <span class="d-xl-none d-none d-lg-inline">ORÇAMENTO</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Logo -->
+            <div class="d-lg-none text-center py-3">
+                <a class="d-inline-block text-decoration-none" href="index.html">
+                    <img src="/assets/imgs/logo/logo.png" 
+                         alt="Ceará Perfil - Infraestrutura Elétrica" 
+                         height="160" 
+                         class="logo-img"
+                         style="transition: transform 0.3s ease;"
+                         onmouseover="this.style.transform='scale(1.05)'"
+                         onmouseout="this.style.transform='scale(1)'">
+                </a>
+            </div>
+
+            <!-- Mobile WhatsApp Button -->
+            <div class="d-lg-none text-center pb-3">
+                <a href="https://api.whatsapp.com/send?phone=5511945403008&text=Olá, Gostaria de Solicitar um Orçamento..." 
+                   class="btn btn-success btn-lg d-flex align-items-center justify-content-center gap-3 fw-bold whatsapp-btn-mobile mx-auto"
+                   target="_blank" rel="noopener">
+                    <i class="bi bi-whatsapp" 
+                       style="font-size: 1.4rem; color: white; transition: all 0.3s ease;"
+                       onmouseover="this.style.color='white'; this.style.transform='scale(1.15) rotate(10deg)'"
+                       onmouseout="this.style.color='white'; this.style.transform='scale(1) rotate(0deg)'"
+                       onfocus="this.style.color='white'; this.style.transform='scale(1.15) rotate(10deg)'"
+                       onblur="this.style.color='white'; this.style.transform='scale(1) rotate(0deg)'"></i>
+                    <span class="d-none d-sm-inline">SOLICITAR ORÇAMENTO</span>
+                    <span class="d-sm-none">ORÇAMENTO</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="d-lg-none border-top mobile-menu-section">
+                <div class="mobile-menu-container">
+                    <button class="btn d-flex align-items-center gap-2 mobile-menu-toggle" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#mobileMenu" 
+                            aria-expanded="false" 
+                            aria-controls="mobileMenu"
+                            aria-label="Menu Principal">
+                        <i class="bi bi-list" 
+                           style="color: white; font-size: 1.4rem; transition: transform 0.3s ease;"
+                           onmouseover="this.style.color='white'; this.style.transform='rotate(90deg) scale(1.1)'"
+                           onmouseout="this.style.color='white'; this.style.transform='rotate(0deg) scale(1)'"
+                           onfocus="this.style.color='white'; this.style.transform='rotate(90deg) scale(1.1)'"
+                           onblur="this.style.color='white'; this.style.transform='rotate(0deg) scale(1)'"></i>
+                        <span>MENU PRINCIPAL</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none mobile-menu-collapse" id="mobileMenu">
+            <div class="mobile-menu-items-container">
+                <ul class="navbar-nav ceara-mobile-nav">
+                    <li class="nav-item menu-principal">
+                        <a class="nav-link ceara-nav-link" href="index.html" data-page="home" data-menu-item="home">
+                            <i class="bi bi-house-door" 
+                               style="margin-right: 8px; font-size: 1rem; color: white; transition: all 0.3s ease;"
+                               onmouseover="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onmouseout="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"
+                               onfocus="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onblur="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item menu-principal">
+                        <a class="nav-link ceara-nav-link" href="sobre-nos.html" data-page="sobre-nos" data-menu-item="sobre-nos">
+                            <i class="bi bi-people" 
+                               style="margin-right: 8px; font-size: 1rem; color: white; transition: all 0.3s ease;"
+                               onmouseover="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onmouseout="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"
+                               onfocus="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onblur="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"></i>
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <li class="nav-item menu-principal">
+                        <a class="nav-link ceara-nav-link" href="/assets/downloads/catalogo-ceara-perfil-2024.pdf" target="_blank" data-page="catalogo" data-menu-item="catalogo">
+                            <i class="bi bi-grid-3x3-gap" 
+                               style="margin-right: 8px; font-size: 1rem; color: white; transition: all 0.3s ease;"
+                               onmouseover="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onmouseout="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"
+                               onfocus="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onblur="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"></i>
+                            Catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item menu-principal">
+                        <a class="nav-link ceara-nav-link" href="#contatos" data-page="contatos" data-menu-item="contatos">
+                            <i class="bi bi-telephone" 
+                               style="margin-right: 8px; font-size: 1rem; color: white; transition: all 0.3s ease;"
+                               onmouseover="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onmouseout="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"
+                               onfocus="this.style.color='white'; this.style.transform='scale(1.2) translateX(3px)'"
+                               onblur="this.style.color='white'; this.style.transform='scale(1) translateX(0px)'"></i>
+                            Contatos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+
+<style>
+/* ===== HEADER CEARÁ PERFIL - ESTILOS COMPLETOS ===== */
+
+.active svg {
+fill: white !important;
+}
+
+/* Logo com efeito hover */
+.ceara-perfil-header .logo-img {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.ceara-perfil-header .logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== MENU DESKTOP ===== */
+.ceara-perfil-header .ceara-main-menu .nav-link {
+    color: #315768 !important;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    backdrop-filter: blur(5px);
+    font-size: 0.95rem;
+}
+
+.ceara-perfil-header .ceara-main-menu .nav-link:hover {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #4a90e2 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.2);
+    border-color: rgba(74, 144, 226, 0.2);
+}
+
+.ceara-perfil-header .ceara-main-menu .nav-link.active {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+    border-color: rgba(74, 144, 226, 0.3);
+}
+
+/* Ícones do menu desktop */
+.ceara-perfil-header .ceara-main-menu .nav-link i {
+    transition: all 0.3s ease;
+}
+
+.ceara-perfil-header .ceara-main-menu .nav-link:not(.active) i {
+    color: #315768 !important;
+}
+
+.ceara-perfil-header .ceara-main-menu .nav-link:not(.active):hover i {
+    color: #4a90e2 !important;
+}
+
+.ceara-perfil-header .ceara-main-menu .nav-link.active i {
+    color: white !important;
+}
+
+/* ===== SEÇÃO MENU MOBILE ===== */
+.ceara-perfil-header .mobile-menu-section {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%) !important;
+    margin: 0;
+    padding: 0.75rem 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-shadow: 0 2px 10px rgba(74, 144, 226, 0.2);
+}
+
+.ceara-perfil-header .mobile-menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Botão toggle do menu mobile */
+.ceara-perfil-header .mobile-menu-toggle {
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 12px;
+    min-width: 200px;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.6px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ceara-perfil-header .mobile-menu-toggle:hover {
+    border-color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ceara-perfil-header .mobile-menu-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.3) !important;
+    outline: none !important;
+    color: #ffffff !important;
+}
+
+.ceara-perfil-header .mobile-menu-toggle span {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ceara-perfil-header .mobile-menu-toggle:hover span {
+    color: #ffffff !important;
+    letter-spacing: 0.8px;
+}
+
+/* ===== MENU MOBILE COLLAPSE ===== */
+.ceara-perfil-header .mobile-menu-collapse {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%) !important;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ceara-perfil-header .mobile-menu-items-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 15px;
+}
+
+/* Links do menu mobile */
+.ceara-perfil-header .ceara-mobile-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 1rem 1.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(5px);
+    border-left: 3px solid transparent;
+}
+
+.ceara-perfil-header .ceara-mobile-nav .nav-link:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.18) !important;
+    transform: translateX(8px) scale(1.02);
+    border-left: 3px solid rgba(255, 255, 255, 0.7);
+    padding-left: 1.5rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ceara-perfil-header .ceara-mobile-nav .nav-link.active {
+    color: #357abd !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    border-left: 3px solid #357abd;
+    font-weight: 700;
+    transform: translateX(8px);
+    padding-left: 1.5rem !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ceara-perfil-header .ceara-mobile-nav .nav-link.active i {
+    color: #357abd !important;
+}
+
+.ceara-perfil-header .ceara-mobile-nav .nav-item:last-child .nav-link {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* ===== BOTÕES WHATSAPP ===== */
+
+/* WhatsApp Desktop */
+.ceara-perfil-header .whatsapp-btn {
+    background-color: #07931e !important;
+    border-color: #07931e !important;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    color: white !important;
+    font-weight: 700;
+    font-size: 1rem;
+    min-height: 50px;
+    box-shadow: 0 4px 15px rgba(7, 147, 30, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ceara-perfil-header .whatsapp-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.ceara-perfil-header .whatsapp-btn:hover:before {
+    left: 100%;
+}
+
+.ceara-perfil-header .whatsapp-btn:hover {
+    background-color: #05731a !important;
+    border-color: #05731a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(7, 147, 30, 0.5);
+    color: white !important;
+}
+
+.ceara-perfil-header .whatsapp-btn:focus {
+    background-color: #05731a !important;
+    border-color: #05731a !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.25rem rgba(7, 147, 30, 0.25) !important;
+}
+
+/* WhatsApp Mobile */
+.ceara-perfil-header .whatsapp-btn-mobile {
+    background-color: #07931e !important;
+    border-color: #07931e !important;
+    transition: all 0.3s ease;
+    border-radius: 30px !important;
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 1rem 3rem !important;
+    box-shadow: 0 6px 20px rgba(7, 147, 30, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    min-width: 280px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.ceara-perfil-header .whatsapp-btn-mobile:hover {
+    background-color: #05731a !important;
+    border-color: #05731a !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(7, 147, 30, 0.6);
+    color: white !important;
+}
+
+.ceara-perfil-header .whatsapp-btn-mobile:focus {
+    background-color: #05731a !important;
+    border-color: #05731a !important;
+    color: white !important;
+    box-shadow: 0 0 0 0.25rem rgba(7, 147, 30, 0.25) !important;
+}
+
+.ceara-perfil-header .whatsapp-btn-mobile i {
+    font-size: 1.4rem;
+}
+
+/* ===== ANIMAÇÕES E TRANSIÇÕES ===== */
+.ceara-perfil-header #mobileMenu {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ceara-perfil-header .nav-link,
+.ceara-perfil-header .btn {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.ceara-perfil-header .nav-link:focus,
+.ceara-perfil-header .btn:focus {
+    outline: 2px solid rgba(74, 144, 226, 0.5) !important;
+    outline-offset: 2px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .ceara-perfil-header .logo-img {
+        height: 140px !important;
+    }
+}
+
+/* Mobile Grande */
+@media (max-width: 768px) {
+    .ceara-perfil-header .logo-img {
+        height: 130px !important;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle {
+        min-width: 180px;
+        font-size: 0.85rem;
+        padding: 0.65rem 1.25rem !important;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle span {
+        font-size: 0.85rem !important;
+    }
+    
+    .ceara-perfil-header .whatsapp-btn-mobile {
+        min-width: 260px;
+        padding: 0.9rem 2.5rem !important;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Médio */
+@media (max-width: 576px) {
+    .ceara-perfil-header .logo-img {
+        height: 110px !important;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle {
+        min-width: 160px;
+        font-size: 0.8rem;
+        padding: 0.55rem 1rem !important;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle span {
+        font-size: 0.8rem !important;
+    }
+    
+    .ceara-perfil-header .whatsapp-btn-mobile {
+        min-width: 240px;
+        padding: 0.85rem 2rem !important;
+        font-size: 0.95rem;
+        letter-spacing: 0.6px;
+    }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 400px) {
+    .ceara-perfil-header .logo-img {
+        height: 90px !important;
+    }
+    
+    .ceara-perfil-header .whatsapp-btn-mobile {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 0.9rem;
+        min-width: 220px;
+        letter-spacing: 0.4px;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle {
+        min-width: 150px;
+        font-size: 0.75rem;
+        padding: 0.5rem 0.9rem !important;
+    }
+    
+    .ceara-perfil-header .mobile-menu-toggle span {
+        font-size: 0.75rem !important;
+        letter-spacing: 0.4px;
+    }
+}
+
+/* ===== ESTADOS DE ACESSIBILIDADE ===== */
+@media (prefers-reduced-motion: reduce) {
+    .ceara-perfil-header * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .ceara-perfil-header .nav-link {
+        border: 2px solid #000 !important;
+    }
+    
+    .ceara-perfil-header .nav-link:focus {
+        outline: 3px solid #000 !important;
+    }
+}
+
+/* ===== IMPRESSÃO ===== */
+@media print {
+    .ceara-perfil-header .whatsapp-btn,
+    .ceara-perfil-header .whatsapp-btn-mobile,
+    .ceara-perfil-header .mobile-menu-section {
+        display: none !important;
+    }
+}
+</style>
+
+<script>
+// ===== JAVASCRIPT COMPLETO PARA O HEADER ===== //
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ===== DETECÇÃO DE PÁGINA ATIVA ===== //
+    function setActiveMenuItem() {
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
+        const currentHash = window.location.hash;
+        
+        // Remove todas as classes active existentes
+        document.querySelectorAll('.ceara-perfil-header .nav-link').forEach(link => {
+            link.classList.remove('active');
+            // Reset icon colors
+            const icon = link.querySelector('i');
+            if (icon && !link.closest('.ceara-mobile-nav')) {
+                icon.style.color = '#315768';
+            }
+        });
+        
+        // Adiciona classe active ao link correspondente
+        document.querySelectorAll('.ceara-perfil-header .nav-link').forEach(link => {
+            const linkHref = link.getAttribute('href');
+            let isActive = false;
+            
+            // Verifica se é a página atual
+            if (linkHref === currentPage || 
+                (currentPage === '' && linkHref === 'index.html') ||
+                (currentPage === 'index.html' && linkHref === 'index.html') ||
+                linkHref === currentPath) {
+                isActive = true;
+            }
+            
+            // Para links com âncora (como #contatos)
+            if (linkHref.startsWith('#') && currentHash === linkHref) {
+                isActive = true;
+            }
+            
+            // Para catálogo PDF
+            if (linkHref.includes('catalogo') && (currentPath.includes('catalogo') || currentPage.includes('catalogo'))) {
+                isActive = true;
+            }
+            
+            if (isActive) {
+                link.classList.add('active');
+                // Set icon color for active state
+                const icon = link.querySelector('i');
+                if (icon) {
+                    if (link.closest('.ceara-mobile-nav')) {
+                        icon.style.color = '#357abd';
+                    } else {
+                        icon.style.color = 'white';
+                    }
+                }
+            }
+        });
+    }
+
+    // ===== SMOOTH SCROLL PARA ÂNCORAS ===== //
+    function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return; // Ignora links vazios
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    
+                    // Fecha menu mobile se estiver aberto
+                    const mobileMenu = document.getElementById('mobileMenu');
+                    if (mobileMenu && mobileMenu.classList.contains('show')) {
+                        const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+                        if (bsCollapse) {
+                            bsCollapse.hide();
+                        }
+                    }
+                    
+                    // Smooth scroll
+                    setTimeout(() => {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Atualiza URL sem recarregar página
+                        history.pushState(null, null, href);
+                        setActiveMenuItem();
+                    }, mobileMenu && mobileMenu.classList.contains('show') ? 300 : 0);
+                }
+            });
+        });
+    }
+
+    // ===== CONTROLE DO MENU MOBILE ===== //
+    function initMobileMenu() {
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.ceara-mobile-nav .nav-link');
+        
+        // Fechar menu ao clicar em um link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (mobileMenu && mobileMenu.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                }
+            });
+        });
+
+        // Atualizar ícone do botão toggle
+        if (mobileMenuToggle && mobileMenu) {
+            mobileMenu.addEventListener('show.bs.collapse', function() {
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.className = 'bi bi-x';
+                    icon.style.transform = 'rotate(90deg) scale(1.1)';
+                }
+            });
+
+            mobileMenu.addEventListener('hide.bs.collapse', function() {
+                const icon = mobileMenuToggle.querySelector('i');
+                if (icon) {
+                    icon.className = 'bi bi-list';
+                    icon.style.transform = 'rotate(0deg) scale(1)';
+                }
+            });
+        }
+
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function(e) {
+            if (mobileMenu && mobileMenu.classList.contains('show')) {
+                if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                }
+            }
+        });
+
+        // Fechar menu ao pressionar ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            }
+        });
+    }
+
+    // ===== ACESSIBILIDADE DO TECLADO ===== //
+    function initKeyboardNavigation() {
+        // Navegação por teclado no menu desktop
+        document.querySelectorAll('.ceara-main-menu .nav-link').forEach(link => {
+            link.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+
+        // Navegação por teclado no menu mobile
+        document.querySelectorAll('.ceara-mobile-nav .nav-link').forEach(link => {
+            link.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+    }
+
+    // ===== OTIMIZAÇÕES DE PERFORMANCE ===== //
+    function initPerformanceOptimizations() {
+        // Lazy loading para logo se necessário
+        const logoImages = document.querySelectorAll('.logo-img');
+        logoImages.forEach(img => {
+            if (img.loading !== 'eager') {
+                img.loading = 'lazy';
+            }
+        });
+
+        // Preload para links importantes
+        const importantLinks = document.querySelectorAll('a[href$=".pdf"], a[href^="https://api.whatsapp.com"]');
+        importantLinks.forEach(link => {
+            link.rel = link.rel ? link.rel + ' preload' : 'preload';
+        });
+    }
+
+    // ===== ANALYTICS E TRACKING ===== //
+    function initAnalytics() {
+        // Track cliques no WhatsApp
+        document.querySelectorAll('.whatsapp-btn, .whatsapp-btn-mobile').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Google Analytics ou similar
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'whatsapp_click', {
+                        'event_category': 'contact',
+                        'event_label': this.classList.contains('whatsapp-btn-mobile') ? 'mobile' : 'desktop'
+                    });
+                }
+                
+                console.log('WhatsApp button clicked:', this.classList.contains('whatsapp-btn-mobile') ? 'mobile' : 'desktop');
+            });
+        });
+
+        // Track navegação no menu
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const menuItem = this.dataset.menuItem || this.getAttribute('href');
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'menu_navigation', {
+                        'event_category': 'navigation',
+                        'event_label': menuItem
+                    });
+                }
+                
+                console.log('Menu navigation:', menuItem);
+            });
+        });
+    }
+
+    // ===== FEEDBACK VISUAL MELHORADO ===== //
+    function initVisualFeedback() {
+        // Feedback de loading para links externos
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', function() {
+                const originalText = this.innerHTML;
+                if (this.classList.contains('whatsapp-btn') || this.classList.contains('whatsapp-btn-mobile')) {
+                    // Adiciona efeito de loading no WhatsApp
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.style.animation = 'spin 1s linear infinite';
+                    }
+                    
+                    setTimeout(() => {
+                        if (icon) {
+                            icon.style.animation = '';
+                        }
+                    }, 1000);
+                }
+            });
+        });
+
+        // Adiciona CSS para animação de spin
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    // ===== INICIALIZAÇÃO ===== //
+    // Executa todas as funções de inicialização
+    setActiveMenuItem();
+    initSmoothScroll();
+    initMobileMenu();
+    initKeyboardNavigation();
+    initPerformanceOptimizations();
+    initAnalytics();
+    initVisualFeedback();
+
+    // ===== EVENT LISTENERS GLOBAIS ===== //
+    // Reativa menu quando hash muda
+    window.addEventListener('hashchange', setActiveMenuItem);
+    
+    // Reativa menu quando página carrega via AJAX (SPA)
+    window.addEventListener('popstate', setActiveMenuItem);
+
+    // Otimização para redimensionamento
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            // Fecha menu mobile se tela ficar grande
+            if (window.innerWidth >= 992) {
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (mobileMenu && mobileMenu.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
+                }
+            }
+        }, 250);
+    });
+
+    // ===== DEBUG INFO (remover em produção) ===== //
+    if (window.location.hostname === 'localhost' || window.location.hostname.includes('127.0.0.1')) {
+        console.log('🔧 Ceará Perfil Header initialized');
+        console.log('📱 Current viewport:', window.innerWidth + 'x' + window.innerHeight);
+        console.log('🌐 Current page:', window.location.pathname);
+        console.log('📍 Current hash:', window.location.hash);
+    }
+});
+
+// ===== FUNÇÕES UTILITÁRIAS GLOBAIS ===== //
+
+// Função para abrir WhatsApp com mensagem personalizada
+window.openWhatsApp = function(customMessage) {
+    const defaultMessage = "Olá, Gostaria de Solicitar um Orçamento...";
+    const message = customMessage || defaultMessage;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5511945403008&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+};
+
+// Função para navegação programática
+window.navigateTo = function(page) {
+    const menuItem = document.querySelector(`[data-page="${page}"]`);
+    if (menuItem) {
+        menuItem.click();
+    }
+};
+
+// Função para fechar menu mobile programaticamente
+window.closeMobileMenu = function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu && mobileMenu.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getInstance(mobileMenu);
+        if (bsCollapse) {
+            bsCollapse.hide();
+        }
+    }
+};
+</script>

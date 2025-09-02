@@ -1,0 +1,332 @@
+<!-- CEARÁ PERFIL - INFRAESTRUTURA ELÉTRICA: Empresa especializada em infraestrutura elétrica industrial e residencial. Endereço: R. Madeira, 39 - Rudge Ramos - São Bernardo do Campo/SP. Contatos: (11) 94540-3008 (principal), (11) 4317-5999 (secundário), contato@cearaperfil.com.br, vendas@cearaperfil.com.br, WhatsApp +55 11 94540-3008. Redes sociais: @cearaperfil (Instagram/Facebook). Horário: Segunda a Sexta 8h00 às 17h30. Produtos: Perfilados metálicos, eletrocalhas, leitos para cabos, acessórios de fixação, abraçadeiras, eletrodutos, dutos de piso, rodapés metálicos, quadros de comandos, caixas para telefonia, abrigos para equipamentos de incêndio. Serviços especiais: Corte e dobra sob medida, projetos personalizados, consultoria técnica. Público-alvo: Construtoras, eletricistas profissionais, engenheiros elétricos, indústrias, setor residencial. Área de atuação: São Paulo Capital, Grande São Paulo, Interior paulista. Entrega disponível para toda Grande São Paulo. Valores: Qualidade nos produtos, agilidade no atendimento, confiança nas relações, preço justo, excelência técnica. Slogan: "O preço que você procura, na qualidade que você merece". Diferenciais: Tradição no mercado, atendimento personalizado, produtos nacionais de qualidade. Identidade visual: Cores primárias azul #1E3A8A (principal), #3B82F6 (médio), #FFFFFF (branco). Cores de apoio: #DBEAFE (azul claro), #6B7280 (cinza), #374151 (cinza escuro), #1F2937 (preto). Tipografia: Arial, Helvetica, sans-serif (limpa e industrial). Estilo: Profissional, industrial, confiável, moderno, limpo. Comunicação: Tom profissional e técnico mas acessível e confiável. Usar terminologia técnica correta do setor elétrico. CTAs padrão: "Solicitar Orçamento", "Entre em Contato", "Saiba Mais". Sempre incluir meio de contato visível. Destacar experiência, qualidade e confiabilidade. Focar benefícios práticos para o cliente. Transmitir confiança e tradição no mercado. Informações claras e objetivas, evitar linguagem rebuscada. Referenciar normas técnicas brasileiras (ABNT, INMETRO). Enfatizar segurança em instalações elétricas. Destacar qualidade e certificação dos produtos. Apresentar especificações técnicas claras e precisas. Incluir orientações básicas de instalação quando apropriado. Mencionar aspectos de sustentabilidade e eficiência energética quando relevante.REGRAS FRAMEWORK E COMPONENTES: Criar componente HTML independente, não página completa. NÃO incluir DOCTYPE, html, head, body ou estrutura completa de página. NÃO incluir CDNs externos (Bootstrap, jQuery, etc). NÃO adicionar tags script ou link para recursos externos. Usar Bootstrap 5 assumindo que já está carregado na página principal. Bootstrap Icons já disponíveis com estrutura <i class="bi bi-[nome-do-icone]"></i> e TODOS os estilos devem ser aplicados via CSS inline usando atributo style incluindo cor (color: #hex), tamanho (font-size: 1.5rem), animações, filtros, espaçamentos (margin, padding), sombras (filter: drop-shadow), transições (transition: all 0.3s ease) e outros efeitos visuais necessários. JavaScript inline permitido se necessário para funcionalidades do componente. Eventos inline (onclick, onmouseover, etc) permitidos e recomendados. Elemento principal deve ter ID único baseado no nome da pasta do componente. Adicionar classe "screenshot-component" no elemento principal se componente for visualmente completo e autônomo. Usar tags HTML5 semânticas (section, article, nav, header, footer, aside). Sistema de grid Bootstrap obrigatório (container, row, col). Classes de spacing Bootstrap (m-, p-, g-). Border radius padrão: rounded (0.375rem) ou rounded-lg (0.5rem). Sombras sutis: shadow-sm ou shadow para elementos em destaque. Transições hover suaves com transition-all duration-300. Botões primários: btn-primary (azul) para ações principais. Botões secundários: btn-outline-primary ou btn-light. Cards com border-0 shadow-sm para visual limpo. Navbar com bg-primary ou bg-white shadow-sm. Footer com bg-dark text-light ou bg-light border-top. Form controls com border-primary em focus. Usar classes alert Bootstrap para mensagens de feedback. Classes CSS descritivas, seguir padrão BEM quando apropriado. Estabelecer hierarquia visual clara (h1, h2, h3). Garantir responsividade obrigatória para dispositivos móveis e desktop. Desenvolver mobile first. Elementos tocáveis com tamanho mínimo 44px. Incluir atributos ARIA quando necessário. Alt text obrigatório em todas as imagens. Suporte completo para navegação via teclado. Estados de focus visualmente claros e acessíveis. Navegação intuitiva e previsível. Priorizar JavaScript vanilla, evitar dependências desnecessárias. Feedback visual para todas as interações do usuário. Validação de formulários em tempo real quando possível. Tratar erros graciosamente com mensagens amigáveis ao usuário. Estados de loading quando necessário. Imagens otimizadas com alt text sempre presente. Lazy loading para imagens fora da viewport inicial. Evitar recursos desnecessários. Otimizar para Core Web Vitals (LCP, FID, CLS). Sanitização adequada de inputs do usuário. Validação no servidor além da validação client-side. HTTPS obrigatório em produção. Código limpo, legível e bem estruturado. Separação clara de responsabilidades (HTML, CSS, JS). Componentes reutilizáveis quando possível. Documentação clara do propósito de cada componente. Código bem comentado quando necessário. -->
+<nav class="navbar navbar-expand-lg navbar-dark ceara-menu-produtos-nav screenshot-component" id="ceara-menu-produtos-redesigned">
+   <div class="container-fluid">
+       <button class="navbar-toggler d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="bi bi-grid-3x3-gap" style="color: #FFFFFF; font-size: 1.4rem; transition: all 0.3s ease;"></i>
+           <span class="navbar-toggler-text">NOSSOS PRODUTOS</span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+           <div class="w-100">
+               <ul class="navbar-nav justify-content-center first-row">
+                   <li class="nav-item">
+                       <a class="nav-link" href="#perfilados">
+                           <i class="bi bi-rulers" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Perfilados
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#eletrocalhas">
+                           <i class="bi bi-diagram-3" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Eletrocalhas
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#leitos-cabos">
+                           <i class="bi bi-ethernet" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Leitos para cabos
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#acessorios-fixacao">
+                           <i class="bi bi-tools" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Acessórios para fixação
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#abracadeiras">
+                           <i class="bi bi-nut" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Abraçadeiras
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#eletrodutos">
+                           <i class="bi bi-bezier2" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Eletrodutos
+                       </a>
+                   </li>
+               </ul>
+               <ul class="navbar-nav justify-content-center second-row">
+                   <li class="nav-item">
+                       <a class="nav-link" href="#dutos-piso">
+                           <i class="bi bi-layers" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Dutos de piso
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#rodapes-metalicos">
+                           <i class="bi bi-bounding-box" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Rodapés Metálicos
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#quadros-comandos">
+                           <i class="bi bi-cpu" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Quadros de comandos
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#caixa-telefonia">
+                           <i class="bi bi-telephone" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Caixa para telefonia
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#abrigos-incendios">
+                           <i class="bi bi-shield-exclamation" style="margin-right: 6px; font-size: 1rem;"></i>
+                           Abrigos para incêndios
+                       </a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</nav>
+
+<style>
+   /* Cor principal alinhada com a identidade da Ceará Perfil */
+   .ceara-menu-produtos-nav.navbar-dark {
+       background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%) !important;
+       box-shadow: 0 4px 15px rgba(30, 58, 138, 0.15);
+       border-bottom: 2px solid #DBEAFE;
+       position: relative;
+   }
+
+   /* Overlay sutil para profundidade */
+   .ceara-menu-produtos-nav::before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background: rgba(255, 255, 255, 0.03);
+       pointer-events: none;
+   }
+
+   /* Layout de duas linhas */
+   .ceara-menu-produtos-nav .first-row {
+       margin-bottom: 0.75rem;
+   }
+   .ceara-menu-produtos-nav .second-row {
+       margin-top: 0;
+   }
+
+   /* Espaçamento entre as linhas */
+   .ceara-menu-produtos-nav .first-row, 
+   .ceara-menu-produtos-nav .second-row {
+       flex-wrap: wrap;
+       gap: 0.5rem;
+       justify-content: center;
+   }
+
+   .ceara-menu-produtos-nav .navbar-nav .nav-link {
+       color: #FFFFFF !important;
+       font-weight: 600;
+       padding: 0.75rem 1.25rem !important;
+       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+       position: relative;
+       border-radius: 8px;
+       margin: 0 0.25rem;
+       white-space: nowrap;
+       font-size: 0.9rem;
+       border: 1px solid transparent;
+       background: rgba(255, 255, 255, 0.08);
+       backdrop-filter: blur(10px);
+       display: flex;
+       align-items: center;
+       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   }
+
+   /* Efeitos de hover mais sofisticados */
+   .ceara-menu-produtos-nav .navbar-nav .nav-link:hover {
+       color: #FFFFFF !important;
+       background: rgba(255, 255, 255, 0.2);
+       border-color: rgba(255, 255, 255, 0.3);
+       transform: translateY(-3px);
+       box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+   }
+
+   .ceara-menu-produtos-nav .navbar-nav .nav-link.active {
+       color: #1E3A8A !important;
+       background: #FFFFFF;
+       border-color: #DBEAFE;
+       transform: translateY(-2px);
+       box-shadow: 0 6px 20px rgba(30, 58, 138, 0.25);
+       font-weight: 700;
+   }
+
+   .ceara-menu-produtos-nav .navbar-nav .nav-link.active i {
+       color: #1E3A8A !important;
+   }
+
+   /* Navbar Toggler - Design aprimorado */
+   .ceara-menu-produtos-nav .navbar-toggler {
+       border: 2px solid rgba(255, 255, 255, 0.4) !important;
+       background: rgba(255, 255, 255, 0.1) !important;
+       backdrop-filter: blur(10px);
+       padding: 0.875rem 1.75rem !important;
+       border-radius: 12px;
+       min-width: 220px;
+       display: none !important;
+       transition: all 0.3s ease;
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .ceara-menu-produtos-nav .navbar-toggler:focus {
+       box-shadow: 0 0 0 0.25rem rgba(219, 234, 254, 0.4) !important;
+       outline: none !important;
+       border-color: #DBEAFE !important;
+   }
+
+   .ceara-menu-produtos-nav .navbar-toggler:hover {
+       border-color: rgba(255, 255, 255, 0.8) !important;
+       background: rgba(255, 255, 255, 0.2) !important;
+       transform: translateY(-2px);
+       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+   }
+
+   /* Texto do toggler */
+   .ceara-menu-produtos-nav .navbar-toggler-text {
+       color: #FFFFFF !important;
+       font-weight: 700;
+       font-size: 0.95rem;
+       letter-spacing: 0.8px;
+       transition: all 0.3s ease;
+       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   }
+
+   .ceara-menu-produtos-nav .navbar-toggler:hover .navbar-toggler-text {
+       color: #FFFFFF !important;
+       letter-spacing: 1px;
+   }
+
+   /* Desktop - Menu sempre visível */
+   @media (min-width: 992px) {
+       .ceara-menu-produtos-nav .navbar-collapse {
+           display: block !important;
+       }
+       .ceara-menu-produtos-nav .navbar-toggler {
+           display: none !important;
+       }
+   }
+
+   /* Mobile Styles */
+   @media (max-width: 991.98px) {
+       .ceara-menu-produtos-nav .navbar-toggler {
+           display: flex !important;
+           align-items: center;
+           gap: 0.75rem;
+       }
+
+       .ceara-menu-produtos-nav .first-row, 
+       .ceara-menu-produtos-nav .second-row {
+           flex-direction: column;
+           align-items: stretch;
+           margin-bottom: 0.5rem;
+           gap: 0;
+       }
+
+       /* Menu Mobile - Links com design aprimorado */
+       .ceara-menu-produtos-nav .navbar-nav .nav-link {
+           padding: 0.875rem 1.5rem !important;
+           margin: 0;
+           text-align: left;
+           width: 100%;
+           font-size: 1rem;
+           border-radius: 0;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+           background: rgba(255, 255, 255, 0.05);
+           justify-content: flex-start;
+       }
+
+       .ceara-menu-produtos-nav .navbar-nav .nav-link:hover {
+           background: rgba(255, 255, 255, 0.15);
+           transform: translateX(10px);
+           border-left: 4px solid #FFFFFF;
+           padding-left: 1.375rem !important;
+       }
+
+       .ceara-menu-produtos-nav .navbar-nav .nav-link.active {
+           color: #FFFFFF !important;
+           background: rgba(255, 255, 255, 0.2);
+           border-left: 4px solid #DBEAFE;
+           font-weight: 700;
+           transform: translateX(5px);
+           padding-left: 1.375rem !important;
+       }
+
+       .ceara-menu-produtos-nav .navbar-nav .nav-link.active i {
+           color: #DBEAFE !important;
+       }
+
+       /* Remove border do último item */
+       .ceara-menu-produtos-nav .navbar-nav .nav-item:last-child .nav-link {
+           border-bottom: none;
+       }
+
+       .ceara-menu-produtos-nav .second-row {
+           margin-top: 0.75rem;
+           border-top: 1px solid rgba(255, 255, 255, 0.2);
+           padding-top: 0.75rem;
+       }
+   }
+
+   /* Tablets */
+   @media (max-width: 1200px) and (min-width: 992px) {
+       .ceara-menu-produtos-nav .navbar-nav .nav-link {
+           padding: 0.6rem 1rem !important;
+           font-size: 0.85rem;
+       }
+
+       .ceara-menu-produtos-nav .first-row, 
+       .ceara-menu-produtos-nav .second-row {
+           gap: 0.25rem;
+       }
+   }
+
+   /* Telas pequenas */
+   @media (max-width: 576px) {
+       .ceara-menu-produtos-nav .navbar-toggler {
+           padding: 0.75rem 1.25rem !important;
+           min-width: 200px;
+       }
+
+       .ceara-menu-produtos-nav .navbar-toggler-text {
+           font-size: 0.85rem;
+           letter-spacing: 0.6px;
+       }
+
+       .ceara-menu-produtos-nav .navbar-nav .nav-link {
+           padding: 0.75rem 1.25rem !important;
+           font-size: 0.95rem;
+       }
+   }
+
+   /* Animações suaves */
+   .ceara-menu-produtos-nav .navbar-collapse {
+       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .ceara-menu-produtos-nav .nav-link {
+       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   /* Responsividade extra para telas muito grandes */
+   @media (min-width: 1400px) {
+       .ceara-menu-produtos-nav .navbar-nav .nav-link {
+           padding: 0.875rem 1.5rem !important;
+           font-size: 1rem;
+       }
+   }
+
+   /* Melhorias de acessibilidade */
+   .ceara-menu-produtos-nav .navbar-nav .nav-link:focus {
+       outline: 2px solid #DBEAFE;
+       outline-offset: 2px;
+   }
+
+   /* Loader animation para o ícone do toggler */
+   .ceara-menu-produtos-nav .navbar-toggler:hover i {
+       transform: rotate(90deg);
+   }
+</style>
